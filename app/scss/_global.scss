@@ -1,0 +1,188 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Centro Slab Pro';
+
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $text;
+}
+.active {
+  color: #f39f18 
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $text;
+	overflow-x: hidden;	
+}
+input {
+  border: none;
+  outline: none;
+  display: block;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+	padding: 0 15px; 
+	
+}
+.container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.order__btn {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  padding: 15px 35px;
+  background-color: $orange;
+  border: none;
+  font-family: 'Centro Slab Pro';  
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 1px 3px 0px 0px #b97100;
+  transition: $trans;
+  &:hover {
+    background-color: #fae089;
+    box-shadow: 1px 3px 0px 0px #d6ae27;
+  }
+}
+.custom__btn {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;  
+  background-color: transparent;
+  color: $orange;
+  border: 2px solid $orange;
+  font-family: 'Centro Slab Pro';  
+  font-size: 18px;  
+  line-height: 40px;
+  letter-spacing: 2px;  
+  cursor: pointer;
+  font-weight: 700;  
+  transition: $trans;
+  overflow: hidden;
+  span {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 100%;
+    height: 100%;
+    transition: $trans;
+  }
+  span:nth-child(1) {
+    transform: translateX(-100%);
+  }
+  &:hover span:nth-child(1) {
+    transform: translateX(0);    
+  }
+  span:nth-child(2) {
+    transform: translateX(0);
+  }
+  &:hover span:nth-child(2) {
+    transform: translateX(100%);    
+  }
+
+}
+.advantages__btn {
+  color:  #2c3949;  
+  border: 2px solid #2c3949;
+}
+.section__title {
+  font-family: 'Centro Slab Pro';
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2c3949;
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  padding-bottom: 35px;  
+  text-align: center;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 165px;
+    height: 4px;
+    background-color: $orange;    
+    margin: auto;    
+    top: 30px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+.section__text { 
+  line-height: 22px;
+  font-weight: 400;
+  max-width: 970px;
+  margin: 0 auto;
+  position: relative;  
+  a{
+    text-decoration: underline;
+    color: $orange;
+    font-weight: 700;
+  }
+}
+#toTop {
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  background-color: $orange;
+  color: #fff;
+  text-align: center;
+  padding: 7px;
+  position: fixed;
+  border-radius: 50%;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+///////modal-form////
+.modal-form__content {
+  display: none;
+}

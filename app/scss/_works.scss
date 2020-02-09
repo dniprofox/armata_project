@@ -1,0 +1,75 @@
+.works {
+  padding-top: 40px;
+  background-color: #2c3949;
+}
+.works__title {
+  color: #f9f9f9;
+}
+.works__item-box {
+  display: flex;
+  justify-content: center ;   
+  
+}
+.works__items {
+  margin-bottom: 60px;
+  position: relative; 
+   
+}
+.works__item-link {    
+  font-family: 'Centro Slab Pro';
+  color: #f9f9f9; 
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  width: 150px;
+  text-align: center;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.works__item {
+  margin-right: 5px;
+  padding: 25px 0px 25px 80px;
+  background-color: $orange; 
+  position: relative;
+}
+.works__item-link:before {
+  content: "";
+  border-top: 48px solid transparent;
+  border-bottom: 48px solid transparent;
+  border-left: 35px solid #2c3949;
+  position: absolute;
+  left: 0px;
+  top: 0;  
+}
+.first-item:before  {
+  display: none;
+}
+
+.works__item-link:after {
+  content: "";
+  border-top: 48px solid transparent;
+  border-bottom: 48px solid transparent;
+  border-left: 35px solid #f39f18;
+  position: absolute;
+  right: -34px;
+  top: 0;
+  z-index: 1;
+}
+.works__img {
+  position: absolute;
+  left: 44px;
+  top: 28px;
+}
+
+.order-works{  
+  background-color: #394b5f;
+} 
+
+
+
+
+
+
+
+
