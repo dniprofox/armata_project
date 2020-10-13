@@ -1,0 +1,26 @@
+.footer {
+  background-color: #2c3949;
+}
+.footer__inner {
+  padding: 60px 20px;  
+}
+.footer__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.footer__logo {
+  opacity: 0.34;
+}
+.footer__list {
+  a {
+  opacity: 0.34;
+  &:hover {
+    color: #fff;
+    opacity: 1;
+    border-bottom: none;
+    padding-bottom: none;
+  }
+} 
+}
